@@ -5,12 +5,12 @@
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uyu423/resume.git"
+    "url": "https://github.com/twins1040/twins1040.github.io"
   },
   "scripts": {
     "deploy": "gh-pages -d ./"
   },
-  "author": "Yu Yongwoo <uyu423@gmail.com>",
+  "author": "Myeongwook Cheon <twins1040@gmail.com>",
   "license": "UNLICENSED",
   "dependencies": {
     "gh-pages": "^1.1.0"
