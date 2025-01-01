@@ -13,8 +13,8 @@ function renderExperience(experience) {
         item.innerHTML = `
             <div class="experience-header">
                 <div>
-                    <div class="company-name">${exp.company}</div>
-                    <div>${exp.position}</div>
+                    <div class="primary-title">${exp.company}</div>
+                    <div class="secondary-title">${exp.position}</div>
                 </div>
                 <div class="period">${exp.period}</div>
             </div>
@@ -38,8 +38,8 @@ function renderProjects(projects) {
         item.innerHTML = `
             <div class="project-header">
                 <div>
-                    <div class="company-name">${project.title}</div>
-                    <div>${project.company}</div>
+                    <div class="primary-title">${project.title}</div>
+                    <div class="secondary-title">${project.company}</div>
                 </div>
                 <div class="period">${project.period}</div>
             </div>
@@ -113,8 +113,8 @@ function renderEducation(education) {
         item.innerHTML = `
             <div class="experience-header">
                 <div>
-                    <div class="company-name">${edu.school}</div>
-                    <div>${edu.major}</div>
+                    <div class="primary-title">${edu.school}</div>
+                    <div class="secondary-title">${edu.major}</div>
                 </div>
                 <div class="period">${edu.period}</div>
             </div>
