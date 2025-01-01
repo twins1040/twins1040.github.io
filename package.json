@@ -1,0 +1,18 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Please Get Me",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twins1040/twins1040.github.io"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d ./"
+  },
+  "author": "Myeongwook Cheon <twins1040@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}
