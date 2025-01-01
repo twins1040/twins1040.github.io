@@ -58,6 +58,73 @@
         "Linux Kernel Crash debugging 경험 다수, Crash Handler 설계 경험",
         "Ramdump 데이터, T32 Simulator를 통해, 메모리 데이터, 콜스택 분석"
       ]
+    },
+    {
+      "period": "2019. 07 ~ 2019. 12",
+      "title": "자동분산투자",
+      "company": "(주)에잇퍼센트",
+      "details": [
+        "단일 채권에 대해 투자하면 일부 고객은 높은 수익률 달성하지만, 소수의 고객은 큰 손실을 봄",
+        "모든 투자자가 한 두 채권의 부실에도 일정한 기대수익률을 얻기 하고자 했음",
+        "채권을 리스크별로 분리하고, 적은 금액을 다수에 채권에 적절히 나누어 투자 하도록 함",
+        "Django Ptyhon을 활용한 기능 구현"
+      ]
+    },
+    {
+      "period": "2020. 01 ~ 2020. 06",
+      "title": "카카오 간편 송금",
+      "company": "(주)에잇퍼센트",
+      "details": [
+        "카카오톡 앱을 통해 예치금 가상계좌에 돈을 입금할 수 있도록 함"
+      ]
+    },
+    {
+      "period": "2020. 07 ~ 2020. 12",
+      "title": "1원 송금 계좌인증",
+      "company": "(주)에잇퍼센트",
+      "details": [
+        "쿠콘 1원 인증 API 를 이용해 계좌주 본인 확인"
+      ]
+    },
+    {
+      "period": "2021. 01 ~ 2021. 12",
+      "title": "신용정보원 신용정보 집중 시스템",
+      "company": "(주)에잇퍼센트",
+      "details": [
+        "채권 정보를 법적 요건에 맞게 전문 형태로 가공하여 매 영업일 마다 제공"
+      ]
+    },
+    {
+      "period": "2022. 01 ~ 2023. 12",
+      "title": "대출 입점",
+      "company": "(주)에잇퍼센트",
+      "details": [
+        "대출 채널을 늘리기 위해 다양한 플랫폼을 통해 대출을 취급할 필요가 발생",
+        "각 금융사와 전용선을 직접 연결, VPN 을 통해 안전 통신.",
+        "다수 플랫폼의 모든 고객이 금리한도조회하게 되어 트래픽의 규모가 급격히 증가",
+        "KCB 신용조회 서비스의 성능을 대폭 개선, 이벤트 기반 아키텍처 도입으로 핵심 서비스와 디커플링",
+        "KCB 시스템은 JAVA 외주 레거시코드. JAVA 를 배워서 개선",
+        "카카오뱅크, 카카오페이, 핀다, 뱅크샐러드와 제휴",
+        "팀장을 맡아 대외계 팀을 꾸려 진행했음.",
+        "Lambda, Serverless V2 등 대외계 인프라가 코어시간때만 활성화되는 점에 착안, 서버리스로 구성하여 비용최적화"
+      ]
+    },
+    {
+      "period": "2024. 01 ~ 2024. 06",
+      "title": "차세대 백오피스 시스템",
+      "company": "(주)에잇퍼센트",
+      "details": [
+        "Retool 을 활용 해 기존 staff 서비스들을 이관"
+      ]
+    },
+    {
+      "period": "2024. 07 ~ 2024. 12",
+      "title": "탈퇴자 DB",
+      "company": "(주)에잇퍼센트",
+      "details": [
+        "메인 DB 의 migration 에 종속되지 않는 개인정보 분리 보관 시스템이 필요했음",
+        "DynamoDB 도입 제안 및 테이블 설계, 탈퇴 시스템 구축"
+      ]
     }
   ],
   "skills": {
@@ -65,15 +132,11 @@
       "title": "Back-end",
       "skills": [
         {
-          "name": "Django",
-          "level": 3
-        },
-        {
-          "name": "DRF",
-          "level": 3
-        },
-        {
           "name": "Python",
+          "level": 3
+        },
+        {
+          "name": "Django",
           "level": 3
         },
         {
@@ -81,8 +144,16 @@
           "level": 3
         },
         {
-          "name": "nginx",
+          "name": "Nginx",
           "level": 2
+        },
+        {
+          "name": "Serverless Framework",
+          "level": 2
+        },
+        {
+          "name": "Kafka",
+          "level": 1
         }
       ]
     },
@@ -94,8 +165,20 @@
           "level": 3
         },
         {
+          "name": "On Premise Server",
+          "level": 3
+        },
+        {
           "name": "MySQL",
           "level": 2
+        },
+        {
+          "name": "Redis",
+          "level": 1
+        },
+        {
+          "name": "DynamoDB",
+          "level": 1
         }
       ]
     },
@@ -104,15 +187,24 @@
       "skills": [
         {
           "name": "Vue.js",
-          "level": 3
+          "level": 2
         },
         {
           "name": "javascript",
-          "level": 3
+          "level": 2
         },
         {
           "name": "HTML/CSS",
-          "level": 3
+          "level": 2
+        }
+      ]
+    },
+    "app": {
+      "title": "App",
+      "skills": [
+        {
+          "name": "Flutter",
+          "level": 1
         }
       ]
     },
@@ -123,8 +215,11 @@
         "Git / Github",
         "Google Tagmanager",
         "Amplitude",
+        "Redash",
         "Sentry",
-        "Kibana"
+        "Jira",
+        "Slack",
+        "Retool"
       ],
       "columnTwo": [
         "Vim",
