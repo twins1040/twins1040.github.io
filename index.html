@@ -25,6 +25,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
     <link rel="stylesheet" href="./showMeTheMoney.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,7 +48,7 @@
         <div class="col-md-9 col-sm-12">
           <div class="row">
             <div class="col text-center text-md-left">
-              <h1 class="blue">천 명 욱</h1>
+              <h1 class="blue profile-name"></h1>
             </div>
           </div>
           <div class="row">
@@ -57,7 +58,7 @@
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
                 <div class="col-auto">
-                  <a href="mailto:twins1040@gmail.com" target="_blank">twins1040@gmail.com</a>
+                  <a class="profile-email" href="" target="_blank"></a>
                 </div>
               </div>
               <div class="row pb-2">
@@ -73,7 +74,7 @@
                   <i class="fa fa-github" aria-hidden="true"></i>
                 </div>
                 <div class="col-auto">
-                  <a href="https://github.com/twins1040" target="_blank">https://github.com/twins1040</a>
+                  <a class="profile-github" href="" target="_blank"></a>
                 </div>
               </div>
               <div class="row">
@@ -100,18 +101,7 @@
           </div>
 
           <div class="row">
-            <div class="col">
-
-              <div class="row">
-                <div class="col-md-3 col-12 text-md-right">
-                  <h4 class="gray">2009. 03 ~ 2015. 02</h4>
-                </div>
-                <div class="col-md-9 col-12">
-                  <h4>고려대학교 졸업</h4>
-                  <i class="gray">전기전자전파공학부</i>
-                </div>
-              </div>
-
+            <div id="education-container" class="col">
             </div>
           </div>
         </div>
@@ -128,101 +118,11 @@
           </div>
 
           <div class="row">
-            <div class="col">
-
-              <div class="row">
-                <div class="col-md-3 col-12 text-md-right">
-                  <div class="row">
-                    <div class="col-md-12 col">
-                      <h4 class="gray">2015. 07 ~ 2017. 12<br/></h4>
-                    </div>
-                    <div class="col-md-12 col-3 text-center text-md-right">
-                        <span class="badge badge-info">2년 5개월</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-9 col-12">
-                  <h4>LG 전자 MC 사업본부</h4>
-                  <i class="gray">BSP Kernel 연구원</i>
-                  <ul class="pt-3">
-                    <li>G6 등 플래그쉽 스마트폰 담당</li>
-                    <li><strong>Skill Keywords</strong></li>
-                    <div>
-                      <span class="badge badge-secondary">C</span>
-                      <span class="badge badge-secondary">ARM assembly</span>
-                      <span class="badge badge-secondary">Linux Kernel</span>
-                      <span class="badge badge-secondary">Android Framework</span>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-              <hr />
-
-              <div class="row">
-                <div class="col-md-3 col-12 text-md-right">
-                  <div class="row">
-                    <div class="col-md-12 col">
-                      <h4 class="gray">2017. 09 ~ 2018. 03<br/></h4>
-                    </div>
-                    <div class="col-md-12 col-3 text-center text-md-right">
-                        <span class="badge badge-info">6개월</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-9 col-12">
-                  <h4>디자이너가 프로그래머를 만났을 때</h4>
-                  <i class="gray">개발자</i>
-                  <ul class="pt-3">
-                    <li>매 주 세미나 진행을 통해 지식 공유 및 습득</li>
-                    <li>해커톤 데이를 통해 서비스 개발 기초 경험</li>
-                    <li>Final 프로젝트를 통해 직접 서비스 개발</li>
-                    <li><strong>Skill Keywords</strong></li>
-                    <div>
-                      <span class="badge badge-secondary">Python</span>
-                      <span class="badge badge-secondary">Django</span>
-                      <span class="badge badge-secondary">Slack</span>
-                      <span class="badge badge-secondary">Zeplin</span>
-                      <span class="badge badge-secondary">inVision</span>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-
+            <div id="experience-container" class="col">
             </div>
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-3 col-12 text-md-right">
-          <div class="row">
-            <div class="col-md-12 col">
-              <h4 class="gray">2019. 07 ~ 현재<br/></h4>
-            </div>
-            <div class="col-md-12 col-3 text-center text-md-right">
-                <span class="badge badge-info"></span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-9 col-12">
-          <h4>(주)에잇퍼센트</h4>
-          <i class="gray">개발자</i>
-          <ul class="pt-3">
-            <li>백앤드 개발</li>
-            <li>프론트앤드 개발</li>
-            <li>AWS 리소스 관리</li>
-            <li>온프레미스 서버 및 네트워크 관리</li>
-            <li><strong>Skill Keywords</strong></li>
-            <div>
-              <span class="badge badge-secondary">Python</span>
-              <span class="badge badge-secondary">Django</span>
-              <span class="badge badge-secondary">Vue</span>
-              <span class="badge badge-secondary">AWS</span>
-            </div>
-          </ul>
-        </div>
-      </div>
-      <!-- Experience End -->
 
       <!-- Project Start -->
       <div class="row pt-5">
@@ -232,112 +132,8 @@
               <h2 class="blue">PROJECTS</h2>
             </div>
           </div>
-
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-md-3 col-12 text-md-right">
-                  <h4 class="gray">2016. 01 ~ 2017. 07</h4>
-                </div>
-                <div class="col-md-9 col-12">
-                  <h4>G5, G6</h4>
-                  <i class="gray">LG 전자</i>
-                  <ul class="pt-3">
-                    <li>LG 프리미엄 폰 임베디드 개발 주니어로 프로젝트에 참가</li>
-                    <li>Stability 업무 담당, Linux Kernel Crash debug</li>
-                  </ul>
-                </div>
-              </div>
-              <hr />
-
-              <div class="row">
-                <div class="col-md-3 col-12 text-md-right">
-                  <h4 class="gray">2017. 07 ~ 2017. 12</h4>
-                </div>
-                <div class="col-md-9 col-12">
-                  <h4>Google Pixel 2 XL</h4>
-                  <i class="gray">LG 전자</i>
-                  <ul class="pt-3">
-                    <li>Google ODM(Original Development Manufacturing) 제품</li>
-                    <li>Google 측 requirement에 맞춘 bootloader 및 factory image 담당</li>
-                    <li>block ramdump 기능 개발</li>
-                    <li>Gerrit을 통한 Google, Qualcomm 과의 온라인 협업 경험</li>
-                    <li>Linux Kernel Crash debugging 경험 다수, Crash Handler 설계 경험</li>
-                    <li>Ramdump 데이터, T32 Simulator를 통해, 메모리 데이터, 콜스택 분석 </li>
-                  </ul>
-                </div>
-              </div>
-              <hr />
-
-              <div class="row">
-                <div class="col-md-3 col-12 text-md-right">
-                  <h4 class="gray">2017. 12 ~ 2018. 03</h4>
-                </div>
-                <div class="col-md-9 col-12">
-                  <h4>Timbre</h4>
-                  <i class="gray">동아리 디프만의 final 프로젝트</i>
-                  <ul class="pt-3">
-                    <li><a href="https://github.com/gyukebox/timbre" target="_blank">https://github.com/gyukebox/timbre</a></li>
-                    <li>
-                      <strong>아마추어 성우 플랫폼</strong>
-                      <ul>
-                        <li>의뢰 하기 : 더빙하고자 하는 대본을 업로드 하고, 의뢰비 지정</li>
-                        <li>의뢰 찾기 : 자신과 맞는 의뢰를 찾아 더빙을 진행 하고, 의뢰비 수령</li>
-                      </ul>
-                    </li>
-                    <li>개발자 4명 디자이너 2명으로 시작</li>
-                    <li>개발 겸 기획자를 담당, 팀 리딩 경험</li>
-                    <li>Node.js 로 API 설계</li>
-                    <li>백엔드 API 초기 설계 및 디자인 목업 구상 완료, 두 개발자의 이탈로 api의 일부만 테스트 서버에서 실행 가능한 상태로 종료</li>
-                    <li><a href="./static/pdf/final.pdf">최종 발표 자료</a></li>
-                  </ul>
-                </div>
-              </div>
-              <hr />
-
-              <div class="row">
-                <div class="col-md-3 col-12 text-md-right">
-                  <h4 class="gray">2018. 10 ~ 2019. 07</h4>
-                </div>
-                <div class="col-md-9 col-12">
-                  <h4>youtube thumbnail maker</h4>
-                  <i class="gray">개인 프로젝트</i>
-                  <ul class="pt-3">
-                    <li>
-                      <strong><a href="https://thumbnail-maker.xyz/" target="_blank">thumbnail-maker.xyz</a></strong>
-                    </li>
-                    <li>
-                      <a href="https://github.com/twins1040/ThumbnailCanvas" target="_blank">github.com/twins1040/ThumbnailCanvas</a>
-                    </li>
-                    <li>
-                      <strong>Backend</strong>
-                      <ul>
-                        <li>간편하게 유튜브 썸네일(커버) 이미지를 제작 할 수 있는 서비스</li>
-                        <li>html canvas를 이용하여 web 이미지 편집 툴 제공</li>
-                        <li>AWS EC2, nginx를 서버 인프라로 사용</li>
-                        <li>MySQL은 EC2 서버에 내장</li>
-                        <li>Django REST Framework로 <a href="https://thumbnail-maker.xyz/api/" target="_blank">api 서버</a> 구현</li>
-                        <li>Token base API call 을 통해 무상태성 확보</li>
-                        <li>Claudflare의 CDN을 통해 api 서버 부하 최소화</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Frontend</strong>
-                      <ul>
-                        <li>Vue.js로 프론트 엔드 구현</li>
-                        <li>Goole OAuth2 를 이용해 회원 가입</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Etc</strong>
-                      <ul>
-                        <li>Google ads 로 키워드 광고 집행, analytics로 방문자 분석</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
+            <div id="projects-container" class="col">
             </div>
           </div>
         </div>
@@ -347,140 +143,8 @@
       <!-- Skills Start -->
       <div class="row pt-5">
         <div class="col">
-          <div class="row pb-3">
-            <div class="col">
-              <h2>
-                <span class="blue">
-                  SKILLS
-                </span>
-                <small data-toggle="tooltip" title="1: 기초 수준, 2: 취미 개발 수준, 3: Production 개발 가능 수준">
-                  <i class="fa fa-question-circle" aria-hidden="true"></i>
-                </small>
-              </h2>
-            </div>
+          <div id="skills-container">
           </div>
-          <div class="row">
-            <div class="col-12 col-md-3 text-md-right">
-              <h4 class="gray">Back-end</h4>
-            </div>
-            <div class="col-12 col-md-9">
-              <div class="row">
-                <div class="col">
-                  <ul>
-                    <li>
-                      <span class="badge badge-pill badge-primary">3</span>
-                      Django
-                    </li>
-                    <li>
-                      <span class="badge badge-pill badge-primary">3</span>
-                      DRF
-                    </li>
-                    <li>
-                      <span class="badge badge-pill badge-primary">3</span>
-                      Python
-                    </li>
-                  </ul>
-                </div>
-                <div class="col">
-                  <ul>
-                    <li>
-                      <span class="badge badge-pill badge-primary">3</span>
-                      AWS
-                    </li>
-                    <li>
-                      <span class="badge badge-pill badge-secondary">2</span>
-                      nginx
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div class="row">
-            <div class="col-12 col-md-3 text-md-right">
-              <h4 class="gray">Database</h4>
-            </div>
-            <div class="col-12 col-md-9">
-              <div class="row">
-                <div class="col">
-                  <ul>
-                    <li>
-                      <span class="badge badge-pill badge-primary">3</span>
-                      PostgreSQL
-                    </li>
-                    <li>
-                      <span class="badge badge-pill badge-secondary">2</span>
-                      MySQL
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div class="row">
-            <div class="col-12 col-md-3 text-md-right">
-              <h4 class="gray">Front-end</h4>
-            </div>
-            <div class="col-12 col-md-9">
-              <div class="row">
-                <div class="col">
-                  <ul>
-                    <li>
-                      <span class="badge badge-pill badge-primary">3</span>
-                      Vue.js
-                    </li>
-                    <li>
-                      <span class="badge badge-pill badge-primary">3</span>
-                      javascript
-                    </li>
-                  </ul>
-                </div>
-                <div class="col">
-                  <ul>
-                    <li>
-                      <span class="badge badge-pill badge-primary">3</span>
-                      HTML/CSS
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
-
-          <div class="row">
-            <div class="col-12 col-md-3 text-md-right">
-              <h4 class="gray">Etc</h4>
-            </div>
-            <div class="col-12 col-md-9">
-              <div class="row">
-                <div class="col">
-                  <ul>
-                    <li>Docker</li>
-                    <li>Git / Github</li>
-                  </ul>
-                  <ul>
-                    <li>Google Tagmanager</li>
-                    <li>Amplitude</li>
-                    <li>Sentry</li>
-                    <li>Kibana</li>
-                  </ul>
-                </div>
-                <div class="col">
-                  <ul>
-                    <li>Vim</li>
-                    <li>C, ARM assembly</li>
-                    <li>Linux Kernel</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
       <!-- Skills End -->
