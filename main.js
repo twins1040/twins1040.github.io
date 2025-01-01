@@ -15,15 +15,15 @@ function renderExperience(experience) {
                 <div>
                     <div class="primary-title">${exp.company}</div>
                     <div class="secondary-title">${exp.position}</div>
+                    ${exp.skills ? `<div class="skills">
+                        ${exp.skills.map(skill => `<span class="badge badge-light">${skill}</span>`).join(' ')}
+                    </div>` : ''}
                 </div>
                 <div class="period">${exp.period}</div>
             </div>
             <ul class="details">
                 ${exp.details.map(detail => `<li>${detail}</li>`).join('')}
             </ul>
-            ${exp.skills ? `<div class="skills">
-                ${exp.skills.map(skill => `<span class="badge badge-light">${skill}</span>`).join(' ')}
-            </div>` : ''}
         `;
         container.appendChild(item);
     });
