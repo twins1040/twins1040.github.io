@@ -58,41 +58,6 @@
         "Linux Kernel Crash debugging 경험 다수, Crash Handler 설계 경험",
         "Ramdump 데이터, T32 Simulator를 통해, 메모리 데이터, 콜스택 분석"
       ]
-    },
-    {
-      "period": "2018. 10 ~ 2019. 07",
-      "title": "youtube thumbnail maker",
-      "company": "개인 프로젝트",
-      "website": "https://thumbnail-maker.xyz/",
-      "github": "https://github.com/twins1040/ThumbnailCanvas",
-      "details": [
-        {
-          "title": "Backend",
-          "features": [
-            "간편하게 유튜브 썸네일(커버) 이미지를 제작 할 수 있는 서비스",
-            "html canvas를 이용하여 web 이미지 편집 툴 제공",
-            "AWS EC2, nginx를 서버 인프라로 사용",
-            "MySQL은 EC2 서버에 내장",
-            "Django REST Framework로 api 서버 구현",
-            "Token base API call 을 통해 무상태성 확보",
-            "Claudflare의 CDN을 통해 api 서버 부하 최소화"
-          ]
-        },
-        {
-          "title": "Frontend",
-          "features": [
-            "Vue.js로 프론트 엔드 구현",
-            "Goole OAuth2 를 이용해 회원 가입"
-          ]
-        },
-        {
-          "title": "Etc",
-          "features": [
-            "Google ads 로 키워드 광고 집행, analytics로 방문자 분석"
-          ]
-        }
-      ],
-      "api_url": "https://thumbnail-maker.xyz/api/"
     }
   ],
   "skills": {
