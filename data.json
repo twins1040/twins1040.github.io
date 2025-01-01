@@ -24,18 +24,6 @@
       "skills": ["C", "ARM assembly", "Linux Kernel", "Android Framework"]
     },
     {
-      "period": "2017. 09 ~ 2018. 03",
-      "duration": "6개월",
-      "company": "디자이너가 프로그래머를 만났을 때",
-      "position": "개발자",
-      "details": [
-        "매 주 세미나 진행을 통해 지식 공유 및 습득",
-        "해커톤 데이를 통해 서비스 개발 기초 경험",
-        "Final 프로젝트를 통해 직접 서비스 개발"
-      ],
-      "skills": ["Python", "Django", "Slack", "Zeplin", "inVision"]
-    },
-    {
       "period": "2019. 07 ~ 현재",
       "company": "(주)에잇퍼센트",
       "position": "개발자",
@@ -70,26 +58,6 @@
         "Linux Kernel Crash debugging 경험 다수, Crash Handler 설계 경험",
         "Ramdump 데이터, T32 Simulator를 통해, 메모리 데이터, 콜스택 분석"
       ]
-    },
-    {
-      "period": "2017. 12 ~ 2018. 03",
-      "title": "Timbre",
-      "company": "동아리 디프만의 final 프로젝트",
-      "github": "https://github.com/gyukebox/timbre",
-      "details": [
-        {
-          "title": "아마추어 성우 플랫폼",
-          "features": [
-            "의뢰 하기 : 더빙하고자 하는 대본을 업로드 하고, 의뢰비 지정",
-            "의뢰 찾기 : 자신과 맞는 의뢰를 찾아 더빙을 진행 하고, 의뢰비 수령"
-          ]
-        },
-        "개발자 4명 디자이너 2명으로 시작",
-        "개발 겸 기획자를 담당, 팀 리딩 경험",
-        "Node.js 로 API 설계",
-        "백엔드 API 초기 설계 및 디자인 목업 구상 완료, 두 개발자의 이탈로 api의 일부만 테스트 서버에서 실행 가능한 상태로 종료"
-      ],
-      "presentation": "./static/pdf/final.pdf"
     },
     {
       "period": "2018. 10 ~ 2019. 07",
