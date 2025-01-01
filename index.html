@@ -7,11 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --accent-color: #3498db;
-            --text-color: #333;
-            --light-gray: #f5f6fa;
+            --primary-color: #333;
+            --secondary-color: #666;
+            --accent-color: #000;
+            --text-color: #444;
+            --light-gray: #f8f8f8;
+            --border-color: #ddd;
         }
 
         * {
@@ -24,49 +25,75 @@
             font-family: 'Noto Sans KR', sans-serif;
             line-height: 1.6;
             color: var(--text-color);
-            background-color: var(--light-gray);
+            background-color: white;
         }
 
         .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem 3rem;
             background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            border-radius: 8px;
         }
 
         .header {
-            text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             padding-bottom: 2rem;
-            border-bottom: 2px solid var(--light-gray);
+            border-bottom: 1px solid var(--border-color);
         }
 
         .header h1 {
             font-size: 2.5rem;
+            font-weight: 700;
             color: var(--primary-color);
             margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
         }
 
         .contact-info {
             color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
         }
 
         .section {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
 
         .section-title {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: var(--primary-color);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position: relative;
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: var(--border-color);
         }
 
         .experience-item, .project-item {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .experience-header, .project-header {
@@ -76,93 +103,85 @@
         }
 
         .primary-title {
-            font-weight: 700;
+            font-weight: 600;
             color: var(--primary-color);
             font-size: 1.1rem;
-            margin-bottom: 0.2rem;
         }
 
         .secondary-title {
             color: var(--secondary-color);
-            font-style: italic;
-            font-size: 0.95rem;
-            margin-bottom: 0.3rem;
-            margin-left: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         .period {
             color: var(--secondary-color);
             font-size: 0.9rem;
+            font-weight: 400;
         }
 
         .details {
-            padding-left: 1rem;
             color: var(--text-color);
-            font-size: 0.9rem;
-            opacity: 0.9;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+            padding-left: 0;
         }
 
         .details li {
             margin-bottom: 0.3rem;
-            line-height: 1.4;
+            list-style-type: none;
         }
 
-        .skills {
-            margin-top: 0.2rem;
-            margin-bottom: 0.3rem;
-            font-size: 0.85rem;
-            margin-left: 0.5rem;
-        }
-
-        .badge {
-            display: inline;
+        .details li::before {
+            content: '•';
+            color: var(--accent-color);
             margin-right: 0.5rem;
-            color: var(--secondary-color);
-            opacity: 0.85;
         }
 
-        .skills-grid {
+        .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
+            gap: 2rem;
         }
 
         .skill-category {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .skill-category h3 {
-            color: var(--secondary-color);
+            font-size: 1rem;
+            color: var(--primary-color);
             margin-bottom: 0.5rem;
         }
 
         .skill-list {
-            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
 
         .skill-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.3rem;
-        }
-
-        .skill-level {
-            margin-left: 0.5rem;
-            color: var(--accent-color);
+            background: var(--light-gray);
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
         }
 
         @media (max-width: 768px) {
             .container {
+                padding: 1.5rem;
                 margin: 1rem;
-                padding: 1rem;
             }
 
-            .header h1 {
-                font-size: 2rem;
+            .header {
+                flex-direction: column-reverse;
+                align-items: center;
+                text-align: center;
             }
 
-            .experience-header, .project-header {
-                flex-direction: column;
+            .skills-container {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -171,9 +190,10 @@
     <div class="container">
         <header class="header">
             <h1>천명욱</h1>
+            <div class="subtitle">Software Developer</div>
             <div class="contact-info">
-                <p>📧 twins1040@gmail.com</p>
-                <p>🔗 <a href="https://github.com/twins1040" target="_blank">github.com/twins1040</a></p>
+                <p><a href="mailto:twins1040@gmail.com">twins1040@gmail.com</a></p>
+                <p><a href="https://github.com/twins1040" target="_blank">github.com/twins1040</a></p>
             </div>
         </header>
 
@@ -189,7 +209,7 @@
 
         <section class="section">
             <h2 class="section-title">기술 스택</h2>
-            <div id="skills" class="skills-grid"></div>
+            <div id="skills" class="skills-container"></div>
         </section>
 
         <section class="section">
